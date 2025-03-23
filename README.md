@@ -6,6 +6,7 @@
   <img alt='npm' src='https://img.shields.io/npm/dt/react-multi-step-form?style=flat-square' />
   <img alt='GitHub Repo size' src='https://img.shields.io/github/repo-size/NollysCafe/react-multi-step-form?style=flat-square' />
   <img alt='GitHub last commit' src='https://img.shields.io/github/last-commit/NollysCafe/react-multi-step-form?style=flat-square' />
+  <a href='https://nollyscafe.github.io/react-multi-step-form/'><img alt='Demo' src='https://img.shields.io/badge/Demo-online-success?style=flat-square' /></a>
 </div>
 
 > A modular, type-safe, developer-first multi-step form engine for React.
@@ -147,7 +148,7 @@ useStepValidation(() => formData.email.includes('@'))
 
 ## ✨ Example Showcase
 
-See the [📦 Example Page](https://pages.github.com/) for a live demo. *(Coming soon)*
+See the [📦 Example Page](https://nollyscafe.github.io/react-multi-step-form/) for a live demo.
 
 We'll use GitHub Pages to serve a minimal standalone example. Stay tuned.
 
