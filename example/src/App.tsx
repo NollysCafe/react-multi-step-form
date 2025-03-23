@@ -30,11 +30,15 @@ export default function App(): React.ReactElement {
 			<p>
 				<a href='https://github.com/nollyscafe/react-multi-step-form' target='_blank' rel='noopener noreferrer'>⭐️ GitHub</a>
 				{' | '}
-				<a href='https://npmjs.com/package/react-multi-step-form' target='_blank' rel='noopener noreferrer'>📦 NPM</a>
+				<a href='https://npmjs.com/package/@nolly-cafe/react-multi-step-form' target='_blank' rel='noopener noreferrer'>📦 NPM</a>
 				{' | '}
 				<a href='https://nollyscafe.github.io/react-multi-step-form/' target='_blank' rel='noopener noreferrer'>📖 Docs</a>
 				{' | '}
 				<span>Made with ❤️ by <a href='https://cafe.thenolle.com' target='_blank' rel='noopener noreferrer'>Nolly's Cafe</a></span>
+			</p>
+
+			<p>
+				This is a beta version of the library. Please report any issues or suggestions on the <a href='https://github.com/nollyscafe/react-multi-step-form/issues' target='_blank' rel='noopener noreferrer'>GitHub Issues</a>.
 			</p>
 		</main>
 	)

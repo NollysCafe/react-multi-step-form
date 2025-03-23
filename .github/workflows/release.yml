@@ -1,0 +1,32 @@
+name: 🚀 Publish to npm
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: 🔧 Install pnpm
+        run: npm install -g pnpm
+
+      - name: 📥 Install deps
+        run: pnpm install
+
+      - name: 🛠 Build lib
+        run: pnpm build
+
+      - name: 🚀 Publish
+        run: pnpm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

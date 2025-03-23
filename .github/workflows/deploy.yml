@@ -9,9 +9,6 @@ jobs:
   deploy:
     name: 📦 Build & Deploy Example
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: example
 
     steps:
       - name: ⬇️ Checkout code
@@ -25,11 +22,19 @@ jobs:
       - name: 🔧 Install pnpm
         run: npm install -g pnpm
 
-      - name: 📥 Install deps
+      - name: 📥 Install root deps
         run: pnpm install
 
-      - name: 🛠 Build
+      - name: 🛠 Build lib
+        run: pnpm build
+
+      - name: 📥 Install example deps
+        run: pnpm install
+        working-directory: example
+
+      - name: 🛠 Build example
         run: pnpm run build
+        working-directory: example
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
