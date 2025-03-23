@@ -4,6 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/react-multi-step-form/',
   publicDir: path.resolve(__dirname, 'public'),
   server: {
     open: true,

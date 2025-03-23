@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Components
-import { MultiStepForm, StepForm, useForm, useStepValidation } from 'react-multi-step-form'
+import { MultiStepForm, StepForm, useForm, useStepValidation } from '@nolly-cafe/react-multi-step-form'
 
 interface MyFormShape {
 	email: string

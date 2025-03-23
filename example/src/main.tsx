@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import 'react-multi-step-form/dist/index.cjs.css'
 import './styles/main.scss'
 
 // Components

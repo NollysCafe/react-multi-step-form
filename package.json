@@ -1,5 +1,5 @@
 {
-  "name": "react-multi-step-form",
+  "name": "@nolly-cafe/react-multi-step-form",
   "version": "1.0.0",
   "description": "A modular, type-safe, developer-first multi-step form engine for React.",
   "author": "Nolly's Cafe <https://cafe.thenolle.com>",

@@ -31,11 +31,11 @@ Designed for devs who want full control over multi-step flows — without sacrif
 ## 📦 Installation
 
 ```bash
-pnpm add react-multi-step-form
+pnpm add @nolly-cafe/react-multi-step-form
 # or
-npm install react-multi-step-form
+npm install @nolly-cafe/react-multi-step-form
 # or
-yarn add react-multi-step-form
+yarn add @nolly-cafe/react-multi-step-form
 ```
 
 ---
@@ -43,7 +43,7 @@ yarn add react-multi-step-form
 ## 🧠 Basic Usage
 
 ```tsx
-import { MultiStepForm, StepForm, useForm, useStepValidation } from 'react-multi-step-form'
+import { MultiStepForm, StepForm, useForm, useStepValidation } from '@nolly-cafe/react-multi-step-form'
 
 interface MyFormData {
   email: string
@@ -93,7 +93,7 @@ function EmailStep() {
   ...
 }
 
-@use 'react-multi-step-form/dist/index.cjs.css';
+@use '@nolly-cafe/react-multi-step-form/dist/index.cjs.css';
 ```
 
 ---
