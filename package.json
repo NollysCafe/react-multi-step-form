@@ -1,0 +1,42 @@
+{
+  "name": "react-multi-step-form",
+  "version": "1.0.0",
+  "description": "A modular, type-safe, developer-first multi-step form engine for React.",
+  "author": "Nolly's Cafe <https://cafe.thenolle.com>",
+  "license": "NFE-OSL v1.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "pnpm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0 || ^18.0.0",
+    "react-dom": ">=17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.13.11",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "rollup": "^4.36.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.86.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher"
+    ]
+  }
+}

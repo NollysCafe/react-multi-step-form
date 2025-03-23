@@ -1,0 +1,34 @@
+.step-actions {
+	display: flex;
+	gap: 1rem;
+	justify-content: flex-end;
+
+	button {
+		cursor: pointer;
+		padding: 0.75rem 1.5rem;
+		font-weight: 600;
+		border-radius: 4px;
+		border: none;
+		transition: 250ms ease-in-out;
+
+		&.next {
+			color: var(--text-inverted);
+			background-color: var(--primary);
+		}
+
+		&.previous {
+			color: var(--text);
+			background-color: var(--border);
+		}
+
+		&.cancel {
+			color: var(--text-inverted);
+			background-color: var(--error);
+		}
+
+		&.submit {
+			color: var(--text-inverted);
+			background-color: var(--success);
+		}
+	}
+}

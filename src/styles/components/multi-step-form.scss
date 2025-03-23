@@ -1,0 +1,56 @@
+.multi-step-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 2rem;
+	border-radius: 8px;
+	color: var(--text);
+	background: var(--surface);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+	.progress-bar {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+
+		.step-dot {
+			flex: 1;
+			cursor: pointer;
+			padding: 0.75rem;
+			font-weight: 500;
+			text-align: center;
+			border-radius: 6px;
+			border: 1px solid var(--border);
+			color: var(--text-secondary);
+			background: var(--background);
+			transition: 250ms ease-in-out;
+
+			&.active {
+				color: var(--text-inverted);
+				background: var(--primary);
+			}
+
+			&:disabled {
+				cursor: not-allowed;
+				opacity: 0.4;
+			}
+		}
+	}
+
+	.step-content {
+		animation: fade-in 0.3s ease;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

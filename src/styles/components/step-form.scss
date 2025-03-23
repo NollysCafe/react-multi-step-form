@@ -1,0 +1,18 @@
+.step {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+
+	label {
+		font-weight: 600;
+		color: var(--text);
+	}
+
+	input {
+		padding: 0.75rem 1rem;
+		border-radius: 4px;
+		border: 1px solid var(--border);
+		color: var(--text);
+		background: var(--background);
+	}
+}

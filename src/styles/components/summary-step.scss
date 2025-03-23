@@ -1,0 +1,16 @@
+.summary-step {
+	h3 {
+		margin-bottom: 1rem;
+		color: var(--text);
+	}
+
+	pre {
+		padding: 1rem;
+		font-size: 0.875rem;
+		border-radius: 6px;
+		border: 1px solid var(--border);
+		color: var(--text-secondary);
+		background: var(--background);
+		overflow: auto;
+	}
+}
